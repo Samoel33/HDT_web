@@ -1,0 +1,77 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='../public/css/index.css' type='text/css')
+  title HDT HOME
+header.navigation-container
+  .logo
+    img#logo(src='../public/images/LogoF.gif' alt='logo')
+  .burger
+    .line
+    .line
+    .line
+  .navigation-bar
+    ul.navigation-bar-lists
+      li.list
+        a.home(href='/views/index.html')
+          svg
+            use(xlink:href='../public/images/sprite.svg#icon-home')
+          |  HOME
+      li.list
+        a.services(href='/views/services.html')
+          svg
+            use(xlink:href='../public/images/sprite.svg#icon-briefcase')
+          | SERVICES
+      li.list
+        a.projects(href='/views/projects.html')
+          svg
+            use(xlink:href='../public/images/sprite.svg#icon-hammer')
+          | PROJECTS
+      li.list
+        a.gallery(href='/views/gallery.html')
+          svg
+            use(xlink:href='../public/images/sprite.svg#icon-image')
+          | GALLERY
+      li.list
+        a.projects(href='/views/contact.html')
+          svg
+            use(xlink:href='../public/images/sprite.svg#icon-phone')
+          | CONTACT US
+.background
+  img#logoB(src='../public/images/LogoF.gif' alt='logo')
+main.main-body
+  .HDT
+    h1 Welcome To HDT !
+    p.about-us
+      | HDT was found the year 2020, it is a company that keeps its clients in tech and upto date with technologies, it provides services like web designs, Home automation using electronics gadgets. see the services we render and projects we build.
+  .slogan-pics
+    .circle
+      img(src='../public/images/WHAT-IS-WEB-DESIGN.jpg' alt='WEB DESIGN')
+      span.caption WEB DESIGNS AND MORE
+    .contents
+    .shadow-light
+footer.footer
+  .copyright
+    span.copy HDT &copy;All rights Reserved
+  .social-media
+    ul.navigation-bar-lists-footer
+      li.list
+        a.home(href='#')
+          svg
+            use(xlink:href='../public/images/sprite.svg#icon-facebook')
+          | FACEBOOK
+      li.list
+        a.services(href='#')
+          svg
+            use(xlink:href='../public/images/sprite.svg#icon-twitter')
+          | TWITTER
+      li.list
+        a.projects(href='#')
+          svg
+            use(xlink:href='../public/images/sprite.svg#icon-instagram')
+          | INSTAGRAM
+      li.list
+        a.gallery(href='#') A. MODIFIERS
+script(src='/public/js/index.js')
